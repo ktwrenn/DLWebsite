@@ -61,7 +61,9 @@ angular.module('dlwebsiteApp')
         templateUrl: 'views/main.html',
         controller: 'MainCtrl'
       })
-
+      .when('/about', {
+        templateUrl: 'views/about.html'
+      })
       .when('/chat', {
         templateUrl: 'views/chat.html',
         controller: 'ChatCtrl'
