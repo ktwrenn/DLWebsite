@@ -33,7 +33,7 @@
               <span class="icon-bar"></span>
             </button>
 
-            <a class="navbar-brand" href="#/">NC State Drumline</a>
+            <a class="navbar-brand" href="#/"><img id="logo" src="images/logo.jpg"/></a>
           </div>
 
           <navbar-directive></navbar-directive>
@@ -46,8 +46,10 @@
     </div>
 
     <div class="footer">
-      <div class="container">
-        <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team and Firebase</p>
+      <div class="container" align="center" ng-controller="MainCtrl as main">
+        <ul class="nav navbar-nav" >
+          <li ng-repeat="tab in tabs"><a href="{{tab.href}}">{{tab.name}}</a></li>
+        </ul>
       </div>
     </div>
 

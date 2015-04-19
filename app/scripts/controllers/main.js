@@ -11,7 +11,6 @@ angular.module('dlwebsiteApp')
   .controller('MainCtrl', function ($firebaseObject, $firebaseArray, Ref, $scope) {
     //$scope.content = getContent();
     $scope.content = $firebaseObject(Ref.child('content'));
-    console.log($scope.content);
   
     $scope.tabs = [
       {name: 'Home', href: '#/'},
