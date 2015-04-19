@@ -17,5 +17,5 @@ angular.module('dlwebsiteApp', [
     'ngTouch',
     'firebase',
     'firebase.ref',
-    'firebase.auth'
+    'firebase.auth',
   ]);
